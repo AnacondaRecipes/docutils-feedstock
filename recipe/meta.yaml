@@ -1,17 +1,18 @@
+{% set name = "docutils" %}
 {% set version = "0.18.1" %}
 
 package:
-  name: docutils
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/docutils/docutils-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/docutils-{{ version }}.tar.gz
   sha256: 679987caf361a7539d76e584cbeddc311e3aee937877c87346f31debc63e9d06
 
 build:
-  number: 2
+  number: 3
   # cannot be noarch b/c of scripts
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -48,17 +49,18 @@ test:
     - pip check
 
 about:
-  home: http://docutils.sourceforge.net/
+  home: https://docutils.sourceforge.io/
   license: LicenseRef-Public-Domain-Dedictation and BSD-2-Clause and LicenseRef-PSF-2.1.1 and GPL-3.0-or-later
+  license_family: Other
   license_file: COPYING.txt
   summary: Docutils -- Python Documentation Utilities
   description: |
     Docutils is an open-source text processing system for processing plaintext
     documentation into useful formats, such as HTML, LaTeX, man-pages, open-
     document, or XML.
-  doc_url: http://docutils.sourceforge.net/docs/index.html
+  doc_url: https://docutils.sourceforge.io/docs/index.html
   doc_source_url: https://sourceforge.net/p/docutils/code/HEAD/tree/trunk/docutils/docs/index.txt
-  dev_url: http://svn.code.sf.net/p/docutils/code
+  dev_url: https://svn.code.sf.net/p/docutils/code
 
 extra:
   recipe-maintainers:

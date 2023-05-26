@@ -40,6 +40,10 @@ test:
     - docutils.writers.pep_html
     - docutils.writers.s5_html
     - docutils.writers.xetex
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://docutils.sourceforge.io/

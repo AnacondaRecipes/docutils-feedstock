@@ -44,6 +44,7 @@ test:
 about:
   home: https://docutils.sourceforge.io/
   license: CC-PDDC AND BSD-2-Clause AND PSF-2.1.1 AND GPL-3.0-only
+  license_family: BSD AND GPL
   license_file: LICENSE.txt
   summary: 'Docutils -- Python Documentation Utilities'
   description: |

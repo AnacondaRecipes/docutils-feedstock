@@ -9,13 +9,14 @@ source:
   sha256: c2de3a60e9e7d07be26b7f2b00ca0309c207e06c100f9cc2a94931fc75a478fc
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
     - python
     - pip
+    - wheel
   run:
     - python
 
@@ -39,19 +40,27 @@ test:
     - docutils.writers.pep_html
     - docutils.writers.s5_html
     - docutils.writers.xetex
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
-  home: http://docutils.sourceforge.net/
-  license: Public Domain Dedictation and BSD 2-Clause and PSF 2.1.1 and GPL 3.0
-  license_file: COPYING.txt
+  home: https://docutils.sourceforge.io/
+  license: CC-PDDC AND BSD-2-Clause AND PSF-2.0 AND GPL-3.0-only
+  license_family: Other
+  license_file:
+    - COPYING.txt
+    - licenses/BSD-2-Clause.txt
+    - licenses/gpl-3-0.txt
+    - licenses/python-2-1-1.txt
   summary: 'Docutils -- Python Documentation Utilities'
   description: |
     Docutils is an open-source text processing system for processing plaintext
     documentation into useful formats, such as HTML, LaTeX, man-pages, open-
     document, or XML.
-  doc_url: http://docutils.sourceforge.net/docs/index.html
-  doc_source_url: https://sourceforge.net/p/docutils/code/HEAD/tree/trunk/docutils/docs/index.txt
-  dev_url: http://svn.code.sf.net/p/docutils/code
+  doc_url: https://docutils.sourceforge.io/docs/index.html
+  dev_url: https://svn.code.sf.net/p/docutils/code
 
 extra:
   recipe-maintainers:

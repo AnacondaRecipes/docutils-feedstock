@@ -42,15 +42,15 @@ test:
     - docutils.writers.xetex
 
 about:
-  home: https://docutils.sourceforge.net/
-  license: Public Domain Dedictation and BSD 2-Clause and PSF 2.1.1 and GPL 3.0
-  license_file: COPYING.txt
+  home: https://docutils.sourceforge.io/
+  license: CC-PDDC AND BSD-2-Clause AND PSF-2.1.1 AND GPL-3.0-only
+  license_file: LICENSE.txt
   summary: 'Docutils -- Python Documentation Utilities'
   description: |
     Docutils is an open-source text processing system for processing plaintext
     documentation into useful formats, such as HTML, LaTeX, man-pages, open-
     document, or XML.
-  doc_url: https://docutils.sourceforge.net/docs/index.html
+  doc_url: https://docutils.sourceforge.io/docs/index.html
   dev_url: https://svn.code.sf.net/p/docutils/code
 
 extra:

@@ -47,9 +47,9 @@ test:
 
 about:
   home: https://docutils.sourceforge.io/
-  license: CC-PDDC AND BSD-2-Clause AND GPL-3.0-only
-  license_family: BSD
-  license_file: LICENSE.txt
+  license: CC-PDDC AND BSD-2-Clause AND PSF-2.0 AND GPL-3.0-only
+  license_family: Other
+  license_file: COPYING.txt
   summary: 'Docutils -- Python Documentation Utilities'
   description: |
     Docutils is an open-source text processing system for processing plaintext

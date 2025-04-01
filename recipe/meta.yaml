@@ -1,5 +1,5 @@
 {% set name = "docutils" %}
-{% set version = "0.18.1" %}
+{% set version = "0.21.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/docutils-{{ version }}.tar.gz
-  sha256: 679987caf361a7539d76e584cbeddc311e3aee937877c87346f31debc63e9d06
+  sha256: 3a6b18732edf182daa3cd12775bbb338cf5691468f91eeeb109deff6ebfa986f
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - pip
     - setuptools
     - wheel
+    - flit-core >=3.4,<4
   run:
     - python
 

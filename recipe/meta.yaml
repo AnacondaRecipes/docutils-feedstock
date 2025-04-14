@@ -61,7 +61,6 @@ about:
     documentation into useful formats, such as HTML, LaTeX, man-pages, open-
     document, or XML.
   doc_url: https://docutils.sourceforge.io/docs/index.html
-  doc_source_url: https://sourceforge.net/p/docutils/code/HEAD/tree/trunk/docutils/docs/index.txt
   dev_url: https://svn.code.sf.net/p/docutils/code
 
 extra:

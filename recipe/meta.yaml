@@ -52,7 +52,7 @@ about:
   home: https://docutils.sourceforge.io/
   license: LicenseRef-Public-Domain-Dedictation and BSD-2-Clause and LicenseRef-PSF-2.1.1 and GPL-3.0-or-later
   license_family: Other
-  license_file: COPYING.txt
+  license_file: COPYING.rst
   summary: Docutils -- Python Documentation Utilities
   description: |
     Docutils is an open-source text processing system for processing plaintext
